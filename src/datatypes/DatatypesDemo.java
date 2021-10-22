@@ -11,20 +11,20 @@ public class DatatypesDemo {
         double d = 3424234.3343;
 
         short s = 12321;
-        byte b1= 127;
+        byte b1 = 127;
 
         char c = 'a';
-        boolean b2  = false;
+        boolean b2 = false;
 
-        String str  ="hello";
+        String str = "hello";
 
         //Non -primitive datatype
-        Integer integer ;
+        Integer integer;
         Long l1;
         Float f1;
         Double d1;
         Short s1;
-        Byte  b3;
+        Byte b3;
         Boolean b4;
         Character c1;
 
