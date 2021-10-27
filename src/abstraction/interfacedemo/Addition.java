@@ -1,4 +1,4 @@
-package abstraction;
+package abstraction.interfacedemo;
 
 public class Addition implements Operation{
     @Override
