@@ -2,13 +2,22 @@ package thiskeyword;
 
 /**
  * this keyword => 1 . it refers the instance variable
- * 2. it refers the current class methods
+ * 2. it invokes the current class methods
+ * 3. it invokes the current  class constructor
  */
 public class ThisKeywordDemo {
 
     private int id;
     private String name;
     private String address;
+
+    public ThisKeywordDemo() {
+        System.out.println("In Constructor");
+    }
+
+    public ThisKeywordDemo(int i) {
+        this();
+    }
 
     public static void main(String[] args) {
         ThisKeywordDemo obj = new ThisKeywordDemo();
