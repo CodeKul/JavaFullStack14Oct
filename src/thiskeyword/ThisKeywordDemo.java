@@ -1,7 +1,7 @@
 package thiskeyword;
 
 /**
- * this keyword => 1 . it refers the instance variable
+ * this keyword => 1 . it refers the current  class instance variable
  * 2. it invokes the current class methods
  * 3. it invokes the current  class constructor
  */
