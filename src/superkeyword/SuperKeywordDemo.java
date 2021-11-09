@@ -1,5 +1,7 @@
 package superkeyword;
 
+import statickeyword.StaticKeywordDemo;
+
 /**
  * 1. it refers immediate parent class instance variable
  * 2. it is used to invoke parent class methods
@@ -12,6 +14,9 @@ public class SuperKeywordDemo {
         System.out.println("In Parent constructor");
     }
 
+    public SuperKeywordDemo(int i){
+        System.out.println("In Parent constructor parameter");
+    }
     public void show() {
         System.out.println("In Show ");
     }
@@ -20,15 +25,19 @@ public class SuperKeywordDemo {
 class B extends SuperKeywordDemo {
 
     int i = 12;
-
     public B() {
-        super();
+
         System.out.println("In child const");
     }
 
+    public B(int i){
+        super();
+        System.out.println("In B Const parameter");
+    }
+
     public static void main(String[] args) {
-        B obj = new B();
-        obj.display();
+        StaticKeywordDemo.show();
+        B obj = new B(1);
     }
 
     public void display() {
@@ -36,3 +45,14 @@ class B extends SuperKeywordDemo {
         System.out.println("In Display " + super.i);
     }
 }
+
+//class C extends B{
+//
+//    public C(){
+//        System.out.println("In c constructor");
+//    }
+//
+//    public static void main(String[] args) {
+//        C obj = new C();
+//    }
+//}
