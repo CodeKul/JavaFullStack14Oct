@@ -19,6 +19,5 @@ public class SumDemo {
         } while (choose == 'Y' || choose == 'y');
 
         System.out.println("Sum is=>" + sum);
-
     }
 }
