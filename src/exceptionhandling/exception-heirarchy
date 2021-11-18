@@ -1,9 +1,9 @@
 Throwable
-    Exception
+    Exception(checked Exception)
         -SQLException
         -IoException
            -FileNotFoundException
-        -RuntimeException
+        -RuntimeException(unchecked exception)
                      - ArithmeticException
                      - NullPointerException
                      - NumberFormatException

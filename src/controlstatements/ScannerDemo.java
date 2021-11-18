@@ -12,5 +12,6 @@ public class ScannerDemo {
 
         System.out.println("Your value is=>"+name);
 
+        scanner.close();
     }
 }
