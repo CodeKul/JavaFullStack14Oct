@@ -6,7 +6,7 @@ import java.nio.charset.StandardCharsets;
 public class FileHandlingDemo {
     public static void main(String[] args) {
         File file = new File("/home/vaibhav/workspace/FullStackJava14Oct/src/filehandling/test.txt");
-
+//byte stream
         try {
             FileOutputStream fileOutputStream = new FileOutputStream(file);
             String str = "Welcome";
