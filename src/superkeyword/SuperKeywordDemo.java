@@ -11,6 +11,7 @@ public class SuperKeywordDemo {
     int i = 10;
 
     public SuperKeywordDemo() {
+        super();
         System.out.println("In Parent constructor");
     }
 

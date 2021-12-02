@@ -8,6 +8,10 @@ public class MultithreadingDemo extends Thread {
         System.out.println("In run");
     }
 
+    MultithreadingDemo(){
+
+        System.out.println("In const");
+    }
 
     public static void main(String[] args) {
         System.out.println(Thread.currentThread().getName());
@@ -17,7 +21,7 @@ public class MultithreadingDemo extends Thread {
     }
 }
 
-class Hello extends MultithreadingDemo implements Runnable{
+class Hello implements Runnable{
 
     @Override
     public void run() {

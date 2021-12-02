@@ -8,7 +8,7 @@ public class ScannerDemo {
         String name;
         Scanner scanner  = new Scanner(System.in);
         System.out.println("Enter Name");
-        name = scanner.next();
+        name = scanner.nextLine();
 
         System.out.println("Your value is=>"+name);
 

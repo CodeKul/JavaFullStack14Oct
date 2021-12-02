@@ -5,6 +5,7 @@ public class StaticKeywordDemo {
     int empId;
     String empName;
 
+    Integer i=90;
     public StaticKeywordDemo(int empId, String empName) {
         this.empId = empId;
         this.empName = empName;

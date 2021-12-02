@@ -12,5 +12,8 @@ public class ArrayDemo {
         System.out.println(arr[0]);
         System.out.println(arr[2]);
 
+        ArrayDemo obj = new ArrayDemo();
+        Integer[] arr1 = new Integer[4];
+
     }
 }
