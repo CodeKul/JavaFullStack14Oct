@@ -5,6 +5,7 @@ import java.util.*;
 public class ArrayListDemo {
     public static void main(String[] args) {
 
+
         int[] arr = {22,133,23,444,3};
 
         ArrayList<Integer> list = new ArrayList<>();
