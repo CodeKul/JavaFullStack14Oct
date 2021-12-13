@@ -6,3 +6,4 @@
        - ArrayList(C)              -PriorityQueue(C)                      - HashSet(C)
        - LinkedList(C)           Dequeue(I)                               - LinkedHashSet(C)
        - Vector(C)                   -ArrayDequeue(C)
+           -Stack(C)
