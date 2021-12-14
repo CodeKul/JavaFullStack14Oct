@@ -14,6 +14,10 @@ public class ArrayListDemo {
         list.add(30);
         list.add(40);
 
+        for(Integer i:list){
+            System.out.println(i);
+        }
+
 
 //        Collections.sort(list,Collections.reverseOrder());
         System.out.println(list.get(0));

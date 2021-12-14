@@ -1,9 +1,6 @@
 package collection;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class SetDemo {
     public static void main(String[] args) {
@@ -24,6 +21,17 @@ public class SetDemo {
 //        for (Integer integer : list) {
 //            System.out.println(integer);
 //        }
+
+
+
+        //it maintains insertion order
+        Set<Integer> set1 = new LinkedHashSet<>();
+        set1.add(10);
+        set1.add(50);
+        set1.add(30);
+        set1.add(20);
+
+        System.out.println(set1);
 
     }
 
