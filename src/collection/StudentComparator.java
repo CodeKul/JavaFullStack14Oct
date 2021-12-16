@@ -27,9 +27,7 @@ public class StudentComparator {
         list.add(obj2);
         list.add(obj3);
 
-        Comparator<StudentComparator> comparator = new Comparator<StudentComparator>() {
-            @Override
-            public int compare(StudentComparator o1, StudentComparator o2) {
+        Comparator<StudentComparator> comparator = ( o1, o2)-> {
                 if(o1.id==o2.id){
                     return 0;
                 }else if(o1.id>o2.id){
@@ -37,9 +35,12 @@ public class StudentComparator {
                 }else {
                     return -1;
                 }
-            }
         };
-        Collections.sort(list,comparator);
+
+        Collections.sort(list,comparator.thenComparing((StudentComparator o1, StudentComparator o2)-> {
+            return o1.name.compareTo(o2.name);
+
+        }));
         list.forEach(s -> {
             System.out.println(s.id + " " + s.name + " " + s.address);
         });
