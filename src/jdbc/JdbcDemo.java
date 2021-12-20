@@ -15,7 +15,10 @@ public class JdbcDemo {
 
             Statement statement = connection.createStatement();
 
-            int i = statement.executeUpdate("insert into employee(id,name,address) values(1,'Rahul','Pune')");
+//            String insert = "insert into employee(id,name,address) values(1,'Rahul','Pune')";
+            String update ="update employee set name='Rakesh' where id =1 ";
+            String delete  = "delete from employee where id =1";
+            int i = statement.executeUpdate(delete);
 
             System.out.println("record inserted=>" + i);
 
