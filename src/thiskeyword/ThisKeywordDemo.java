@@ -15,6 +15,9 @@ public class ThisKeywordDemo {
         System.out.println("In Constructor");
     }
 
+    public String msg(){
+        return "Hii";
+    }
     public ThisKeywordDemo(int i) {
         this();
     }
