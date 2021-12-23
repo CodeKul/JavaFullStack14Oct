@@ -6,7 +6,7 @@ import java.util.function.Consumer;
 
 /**
  * lambada expression ->
- * annonymous function
+ * anonymous function
  *
  * advantage ->
  * it gives implementation to functional interface
