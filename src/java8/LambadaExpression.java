@@ -12,7 +12,7 @@ import java.util.function.Consumer;
  * it gives implementation to functional interface
  * it takes less code
  */
-public class LambadaExpression  {
+public class LambadaExpression  implements MyInterface6 {
     public static void main(String[] args) {
        MyInterface myInterface =()-> "Hello";
 
@@ -34,6 +34,12 @@ public class LambadaExpression  {
         };
         list.forEach(consumer);
     }
+
+    @Override
+    public String str() {
+        return null;
+    }
+
 }
 
 
