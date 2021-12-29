@@ -18,7 +18,7 @@ public class DefaultAndStatic implements MyInterface6,MyInterface7{
 
     @Override
     public Integer add(int a, int b) {
-        return MyInterface7.super.add(a,b);
+        return MyInterface6.super.add(a,b);
     }
 
 
