@@ -2,8 +2,11 @@ package java8;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
+import java.util.OptionalInt;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 /**
@@ -28,6 +31,23 @@ public class StreamApi {
         Predicate<Integer> predicate = p->p%2==0;
         Stream<Integer> list2 = list.stream().filter(predicate);
         list2.forEach(System.out::println);
+
+        Arrays.asList("Pune","Mumbai","Nashik")
+                .stream()
+                .map(f->f.toLowerCase())
+                .forEach(System.out::println);
+
+        List<Integer> list3 = Arrays.asList(1,3,3,4,5,5,5,77);
+
+        int max=0;
+        for(int i=0;i< list3.size();i++){
+            if(max<list3.get(i)){
+                max = list3.get(i);
+            }
+        }
+        System.out.println(max);
+
+        System.out.println( IntStream.of(1,3,3,4,5,5,5,77).limit(9).max());
 
     }
 }
